@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "71a21cdb-83ba-4434-a1de-e5dede9ea451",
+		"name": "student and teacher",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Student by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/Students/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Students",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Student get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/Students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student add to database",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/Students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete student by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/Students/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Students",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update to student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\t\"id\": 1234,\r\t\"name\":\"dali\",\r\t\"classroom\":\"birsınıf\",\r\t\"year\":1987\r\t\r}\r"
+				},
+				"url": {
+					"raw": "http://localhost:5000/Students/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Students",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "teachers add to database",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\t\"id\": 3,\r\t\"name\":\"dali\",\r\t\"classroom\":\"birsınıf\",\r\t\"year\":1987\r\t\r}\r",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/Teachers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Teachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All teachers get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\t\"id\": 3,\r\t\"name\":\"dali\",\r\t\"classroom\":\"birsınıf\",\r\t\"year\":1987\r\t\r}\r",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/Teachers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Teachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get teachers by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\t\"id\": 3,\r\t\"name\":\"dali\",\r\t\"classroom\":\"birsınıf\",\r\t\"year\":1987\r\t\r}\r",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/Teachers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Teachers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete teachers by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\t\"id\": 3,\r\t\"name\":\"dali\",\r\t\"classroom\":\"birsınıf\",\r\t\"year\":1987\r\t\r}\r",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/Teachers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Teachers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update teachers by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\t\"id\": 3,\r\t\"name\":\"dali\",\r\t\"classroom\":\"birsınıf\",\r\t\"year\":1987\r\t\r}\r",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/Teachers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Teachers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
