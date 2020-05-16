@@ -17,7 +17,7 @@ app.get('/Students', function (req, res) {
     res.send(studentList);
 })
 /**
- * Secilen id' li ogrenciyi gertiren fonksiyon
+ * Secilen id' li ogrenciyi getiren fonksiyon
  */
 app.get('/Students/:id', function (req, res) {
     let getStudent = studentManager.getStudentsById(req.params.id);

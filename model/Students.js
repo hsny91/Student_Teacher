@@ -1,3 +1,6 @@
+/**
+ * ogrenci bilgilerini olusturan class
+ */
 class Students{
     constructor(pId,pName,PClassroom,PYear){
         this.id=pId;
